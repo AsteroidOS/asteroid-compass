@@ -48,11 +48,10 @@ Application {
         sourceSize.height: height
     }
 
-    Text {
+    Label {
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.bottom: parent.bottom
         anchors.bottomMargin: Dims.l(7)
-        color: "white"
         font.pixelSize: Dims.l(5)
         text: rotation + " °N Calibrated: " + calibration
     }
