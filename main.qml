@@ -32,8 +32,8 @@ Application {
     Compass {
         active: true
         onReadingChanged: {
-            rotation = reading.azimuth;
-            calibration = reading.calibrationLevel;
+            app.rotation = reading.azimuth;
+            app.calibration = reading.calibrationLevel;
         }
     }
 
@@ -42,7 +42,7 @@ Application {
         anchors.margins: Dims.l(15)
         fillMode: Image.PreserveAspectFit
         source: "qrc:///compass.svg"
-        rotation: -rotation
+        rotation: -app.rotation
         height: 200;
         sourceSize.width: width
         sourceSize.height: height
@@ -53,6 +53,6 @@ Application {
         anchors.bottom: parent.bottom
         anchors.bottomMargin: Dims.l(7)
         font.pixelSize: Dims.l(5)
-        text: rotation + " °N Calibrated: " + calibration
+        text: app.rotation + " °N Calibrated: " + app.calibration
     }
 }
