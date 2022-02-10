@@ -23,8 +23,8 @@ import QtSensors 5.3
 Application {
     id: app
 
-    centerColor: "#4cd479"
-    outerColor: "#1c723a"
+    centerColor: "#29A600"
+    outerColor: "#070C00"
 
     property int rotation: 0;
     property int calibration: 0;
