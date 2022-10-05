@@ -6,12 +6,12 @@
     <message id="id-no-data-calibrate">
         <location filename="../src/main.qml" line="45"/>
         <source>&lt;h3&gt;No data&lt;/h3&gt;Calibrate the sensor by moving it in an ∞ figure.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;h3&gt;ไม่พบข้อมูล&lt;/h3&gt;ปรับเทียบเซ็นเซอร์ด้วยการขยับเซ็นเซอร์ในรูป ∞</translation>
     </message>
     <message id="id-app-launcher-name">
         <location filename="asteroid-compass.desktop.h" line="6"/>
         <source>Compass</source>
-        <translation type="unfinished"></translation>
+        <translation>เข็มทิศ</translation>
     </message>
 </context>
 </TS>
