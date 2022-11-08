@@ -5,11 +5,11 @@
     <name></name>
     <message id="id-no-data-calibrate">
         <source>&lt;h3&gt;No data&lt;/h3&gt;Calibrate the sensor by moving it in an ∞ figure.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;h3&gt;Žádná data&lt;/h3&gt;Zkalibrujte senzor pohybem zápěstí po dráze ∞ („osmička“).</translation>
     </message>
     <message id="id-app-launcher-name">
         <source>Compass</source>
-        <translation type="unfinished"></translation>
+        <translation>Kompas</translation>
     </message>
 </context>
 </TS>
