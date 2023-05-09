@@ -1,7 +1,7 @@
 [Desktop Entry]
 Type=Application
 Categories=Applications;
-Exec=invoker --single-instance --type=qtcomponents-qt5 /usr/bin/asteroid-compass
+Exec=asteroid-compass
 Icon=ios-compass-outline
 X-Asteroid-Center-Color=#29A600
 X-Asteroid-Outer-Color=#070C00
