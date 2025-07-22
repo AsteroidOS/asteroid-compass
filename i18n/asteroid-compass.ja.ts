@@ -11,7 +11,7 @@
     <message id="id-app-launcher-name">
         <location filename="asteroid-compass.desktop.h" line="6"/>
         <source>Compass</source>
-        <translation type="unfinished"></translation>
+        <translation>コンパス</translation>
     </message>
 </context>
 </TS>
