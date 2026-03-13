@@ -1,5 +1,6 @@
 /*
- * Copyright (C) 2022 - Darrel Griët    <dgriet@gmail.com>
+ * Copyright (C) 2026 - Timo Könnecke   <github.com/moWerk>
+ *               2022 - Darrel Griët    <dgriet@gmail.com>
  *               2017 - Florent Revest  <revestflo@gmail.com>
  *                    - Niels Tholenaar <info@123quality.nl>
  *
@@ -28,9 +29,8 @@ Application {
     centerColor: "#29A600"
     outerColor: "#070C00"
 
-    property int rotation: 0;
-    property int calibration: 0;
-    property int ringValueOffset: Math.sqrt(Math.pow(Dims.l(40), 2) / 2);
+    property real rotation: 0
+    property int calibration: 0
 
     Compass {
         active: true
@@ -57,20 +57,7 @@ Application {
             Label {
                 id: magneticRotation
                 anchors.centerIn: parent
-                text: app.rotation
-                font {
-                    pixelSize: parent.height / 4
-                    capitalization: Font.Capitalize
-                    styleName: "SemiCondensed"
-                    kerning: true
-                    preferShaping: true
-                }
-            }
-            Label {
-                id: degreeSymbol
-                anchors.top: magneticRotation.top
-                anchors.left: magneticRotation.right
-                text: "°"
+                text: Math.round(app.rotation) + "°"
                 font {
                     pixelSize: parent.height / 4
                     capitalization: Font.Capitalize
@@ -80,7 +67,6 @@ Application {
                 }
             }
             Image {
-                anchors.top: parent.top
                 anchors.centerIn: parent
                 anchors.verticalCenterOffset: -Dims.l(35)
                 width: Dims.l(10)
@@ -94,7 +80,6 @@ Application {
             rotation: -app.rotation
             Repeater {
                 id: outerRing
-                anchors.fill: parent
                 model: 8
                 Label {
                     property var angle: (index / outerRing.count) * 2 * Math.PI
