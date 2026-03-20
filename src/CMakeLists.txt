@@ -4,7 +4,7 @@ set_target_properties(asteroid-compass PROPERTIES PREFIX "")
 target_link_libraries(
 	asteroid-compass
 	PUBLIC
-		Asteroid::AsteroidApp
+		Asteroid::AsteroidApp6
 )
 
 install(
