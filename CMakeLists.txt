@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.6.0)
 
 project(asteroid-compass
-	VERSION 0.0.1
+	VERSION 2.0
 	DESCRIPTION "Default compass app for AsteroidOS")
 
 find_package(ECM REQUIRED NO_MODULE)
