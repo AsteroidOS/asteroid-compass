@@ -1,6 +1,10 @@
 add_library(asteroid-compass main.cpp resources.qrc)
 set_target_properties(asteroid-compass PROPERTIES PREFIX "")
 
+asteroid_app_qml_module(asteroid-compass
+	main.qml
+)
+
 target_link_libraries(
 	asteroid-compass
 	PUBLIC
